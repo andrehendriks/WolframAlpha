@@ -15,25 +15,25 @@ using WolframAlphaNET.Objects;
 
 namespace WolframAlphaConsoleApplication
 {
-    public static class Program
+    public static class Console
     {
-        
 
-        static void Main(string[] args)
+
+        public static void Main(string[] args)
         {
-            
+
             var appid = Properties.Resources.String4;
             WolframAlpha wolfram = new WolframAlpha(appid);
-            
+            SpeechSynthesizer Speak = new SpeechSynthesizer();
 
             Math.BigMul(230, 12);
             Math.IEEERemainder(8.0, 10.0); Math.Abs(1);
-            Math.Truncate(5.0);Math.Truncate(7.0);
+            Math.Truncate(5.0); Math.Truncate(7.0);
             Math.Max(4, 2);
             Math.Min(8, 5);
             Math.Sqrt(15.0);
 
-            string input = Console.ReadLine();
+            string input = System.Console.ReadLine();
             QueryResult results = wolfram.Query(input);
             wolfram.ApiUrl = "http://api.wolframalpha.com/v2/query" + Properties.Resources.String5 + appid + Properties.Resources.String6 + input;
 
@@ -42,8 +42,8 @@ namespace WolframAlphaConsoleApplication
             Asume.Word = Properties.Resources.String1;
             Asume.Word = Properties.Resources.String2;
             Asume.Word = Properties.Resources.String3;
-            
-            
+
+
             wolfram.ApiUrl = "http://api.wolframalpha.com/v2/query" + Properties.Resources.String5 + appid + Properties.Resources.String6 + input + Properties.Resources.String7 + Asume;
             Reinterpret reinterpret = new Reinterpret();
             reinterpret.Text = Properties.Resources.String8;
@@ -51,23 +51,33 @@ namespace WolframAlphaConsoleApplication
             reinterpret.Text = Properties.Resources.String10;
             wolfram.ApiUrl = "http://api.wolframalpha.com/v2/query" + Properties.Resources.String5 + appid + Properties.Resources.String6 + input + Properties.Resources.String7 + reinterpret;
             
+            
                 foreach (Pod pod in results.Pods)
                 {
-                    Console.WriteLine(pod.Title);
+                    System.Console.WriteLine(pod.Title);
 
                     foreach (SubPod subPod in pod.SubPods)
                     {
-                        SpeechSynthesizer Speak = new SpeechSynthesizer();
-                        Console.WriteLine(subPod.Title);
-                        Console.WriteLine(subPod.Plaintext);
+                        
+                        System.Console.WriteLine(subPod.Title);
+                        System.Console.WriteLine(subPod.Plaintext);
                         Speak.Speak(subPod.Plaintext);
-                    }
+                        
+                     }
                 }
             
+
+
+
+
+
+        System.Console.WriteLine(Properties.Resources.String11);
+                System.Console.Read();
+
             
-            Console.WriteLine(Properties.Resources.String11);
-            Console.Read();
-        }
+    }
+
         
+
     }
 }
