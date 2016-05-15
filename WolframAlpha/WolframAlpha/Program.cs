@@ -21,10 +21,10 @@ namespace WolframAlpha
         static void Main(string[] args)
         {
             System.Speech.Synthesis.SpeechSynthesizer speak = new System.Speech.Synthesis.SpeechSynthesizer();
-            WolframAlphaNET.WolframAlpha wolfram = new WolframAlphaNET.WolframAlpha("PARW2K-U872JW7QTL");
-            var appid = "PARW2K-U872JW7QTL";
+            WolframAlphaNET.WolframAlpha wolfram = new WolframAlphaNET.WolframAlpha(Properties.Resources.String1);
+            var appid = Properties.Resources.String1;
             string input =  Console.ReadLine();
-            var Url = "http://api.wolframalpha.com/v2/query"  + "?appid" + appid + "&input=" + input;
+            var Url = "http://api.wolframalpha.com/v2/query"  + Properties.Resources.String2 + appid + Properties.Resources.String3 + input;
 
             QueryResult results = wolfram.Query(input);
 
