@@ -1,26 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WolframAlpha", "WolframAlpha\WolframAlpha.csproj", "{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfWolframAlpha", "WpfWolframAlpha\WpfWolframAlpha.csproj", "{E679D80C-9138-42FB-B92A-6AF1FEC37D39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|ARM.Build.0 = Debug|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Debug|x86.Build.0 = Debug|Any CPU
 		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E679D80C-9138-42FB-B92A-6AF1FEC37D39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E679D80C-9138-42FB-B92A-6AF1FEC37D39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E679D80C-9138-42FB-B92A-6AF1FEC37D39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E679D80C-9138-42FB-B92A-6AF1FEC37D39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|ARM.ActiveCfg = Release|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|ARM.Build.0 = Release|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|x86.ActiveCfg = Release|Any CPU
+		{537E20C6-2240-4ADB-AFB7-D8A03A8DFD46}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
